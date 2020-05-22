@@ -1,0 +1,1 @@
+Stockname = "stock_data\Stock-MSFT.csv"
