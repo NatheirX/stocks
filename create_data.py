@@ -3,7 +3,7 @@ import csv
 from time import sleep
 
 stock_names = ["SURF"]
-
+api_key = "YOUR API KEY HERE"
 
 for stock in stock_names:
     lst_data = []
@@ -12,7 +12,7 @@ for stock in stock_names:
 
     headers = {
     'x-rapidapi-host': "twelvedata.p.rapidapi.com",
-    'x-rapidapi-key': "fe4c7feda4msh612b76ef8e665fcp1a798ajsne8b70b6f0b4a"
+    'x-rapidapi-key': f"{api_key}"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
